@@ -1,0 +1,268 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>St. Rita's vs. St. Leo's</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="./node_modules/html5-boilerplate/dist/css/normalize.css">
+        <link rel="stylesheet" href="./node_modules/html5-boilerplate/dist/css/main.css">
+        <link rel="stylesheet" href="./common/css/styles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet">
+        <style>
+           #map {
+            height: 400px;
+            width: 100%;
+           }
+        </style>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <section id='fight-flyer' style="height: 100vh;">
+          <div class="panels">
+            <div id="st-leos-img" class="panel off-left" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./common/img/stleo.jpg); background-size:cover;">
+              <div class="flex flex-column flex-centered">
+                <span class="display-1">
+                  St. Leo's
+                </span>
+                <span class="display-3">Boxing Club</span>
+              </div>
+            </div>
+            <div id="st-ritas-img" class="panel off-right" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./common/img/rita-3.jpg); background-size: cover;">
+              <div class="flex flex-column flex-centered">
+                <span class="display-1">
+                  St. Rita's
+                </span>
+                <span class="display-3">Boxing Club</span>
+              </div>
+            </div>
+          </div>
+          <div id="fight-bumper" class="centered opacity-half flex flex-column flex-centered">
+            <div id="open-fade-1" class="display-1 opacity-0 fade-in">One Night</div>
+            <div id="open-fade-2" class="display-2 opacity-0 fade-in">Three Fights</div>
+            <div id="open-fade-3" class="display-2 opacity-0 fade-in">
+              May 18, 2018
+            </div>
+          </div>
+          <svg class="arrows" style="color: white;">
+						<a class="link" href="#fight-details">
+              <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            </a>
+          </svg>
+        </section>
+
+        <section id="fight-details" style="height: 100vh;">
+
+          <div class="fight-card main-event">
+            <div style="display: flex; flex-direction: row; align-items:center; justify-content:flex-start;">
+              <div class="display-2 mgn-10">
+                Rita's - Leo's
+              </div>
+              <div class="display-3">
+                King of the Ring
+              </div>
+            </div>
+            <div style="height: inherit; display: flex; justify-content: space-around;">
+              <header class="fight-card-header" style="flex: 1 60%; margin-left: 10px;">
+                <div class="fighter fighter-ritas">
+                  <img alt="fighter" src="https://dummyimage.com/100x100/"/>
+                  <span>Fighter Name</span>
+                </div>
+                <div class="fight-circle">
+                  VS
+                </div>
+                <div class="fighter fighter-leos">
+                  <img alt="fighter" src="https://dummyimage.com/100x100/"/>
+                  <span>Fighter Name</span>
+                </div>
+              </header>
+              <div style="flex: 1 40%; margin-left: 20px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              </div>
+            </div>
+          </div>
+
+          <div class="display-3" style="text-align:center;">
+            Undercard
+          </div>
+
+          <div class="fights wrap">
+            <div class="row-container">
+              <div class="fight-card flex-50">
+                <header class="fight-card-header">
+                  <div class="fighter fighter-ritas">
+                    <img alt="fighter" src="https://dummyimage.com/100x100/"/>
+                    <span>Fighter Name</span>
+                  </div>
+                  <div class="fight-circle">
+                    VS
+                  </div>
+                  <div class="fighter fighter-leos">
+                    <img alt="fighter" src="https://dummyimage.com/100x100/"/>
+                    <span>Fighter Name</span>
+                  </div>
+                </header>
+              </div>
+
+              <div class="fight-card flex-50">
+                <header class="fight-card-header">
+                  <div class="fighter fighter-ritas">
+                    <img alt="fighter" src="https://dummyimage.com/100x100/"/>
+                    <span>Fighter Name</span>
+                  </div>
+                  <div class="fight-circle">
+                    VS
+                  </div>
+                  <div class="fighter fighter-leos">
+                    <img alt="fighter" src="https://dummyimage.com/100x100/"/>
+                    <span>Fighter Name</span>
+                  </div>
+                </header>
+              </div>
+            </div>
+
+            <div class="row-container">
+              <div class="fight-card flex-50">
+                <header class="fight-card-header">
+                  <div class="fighter fighter-ritas">
+                    <img alt="fighter" src="https://dummyimage.com/100x100/"/>
+                    <span>Fighter Name</span>
+                  </div>
+                  <div class="fight-circle">
+                    VS
+                  </div>
+                  <div class="fighter fighter-leos">
+                    <img alt="fighter" src="https://dummyimage.com/100x100/"/>
+                    <span>Fighter Name</span>
+                  </div>
+                </header>
+              </div>
+            </div>
+
+
+          </div>
+          <svg class="arrows arrows-active" style="color: white;">
+						<a class="link" href="#fight-location">
+              <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            </a>
+          </svg>
+        </section>
+
+        <section id='fight-location' style="height: 100vh; display: flex; flex: 1; flex-direction: column; justify-content: space-between;">
+          <div class="row-container" style="padding: 3rem;">
+            <div class="flex-50">
+              <div class="row-container" style="justify-content: flex-start; align-items: center;">
+                <span class="display-2" style="margin-right: 3rem;">Tickets</span>
+                <span class="display-3">Suggested Donation</span>
+              </div>
+              <div class="row-container" style="justify-content: flex-start; align-items: center;">
+                <span class="display-2" style="margin-right: 3rem;">Location</span>
+                <span class="display-3">School Basement</span>
+              </div>
+              <div class="row-container" style="justify-content: flex-start; align-items: center;">
+                <span class="display-2" style="margin-right: 3rem;">Parking</span>
+                <span class="display-3">Behind the Parish</span>
+              </div>
+            </div>
+            <div class="flex-50" style="font-size: 25px;">
+              When you arrive, park in the parking lot behind the parish.  Walk across the parking lot
+              toward the back of the school.  Approach the steps leading down into the basement (underneath
+              the wooden steps leading up into the school).  Tickets will be given at the door for a suggested
+              donation of $5 per person.
+            </div>
+          </div>
+          <div id="map"></div>
+        </section>
+
+        <script src="./node_modules/html5-boilerplate/dist/js/vendor/modernizr-3.5.0.min.js"></script>
+        <!---<script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>-->
+        <script src="./node_modules/html5-boilerplate/dist/js/plugins.js"></script>
+        <script src="./node_modules/html5-boilerplate/dist/js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <!--<script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
+
+        <script>
+        const fightBumper = document.querySelector('#fight-bumper');
+        const downArrow = document.querySelector('.arrows');
+        const openingFades = document.querySelectorAll('[id*=open-fade]');
+
+        window.onload = () => {
+          openingFades[0].classList.add('opacity-1');
+          setTimeout(() => {
+            openingFades[0].classList.remove('opacity-1')
+            openingFades[1].classList.add('opacity-1');
+          }, 2000);
+          setTimeout(() => {
+            openingFades[1].classList.remove('opacity-1');
+            openingFades[2].classList.add('opacity-1');
+          }, 4000);
+
+          setTimeout(() => {
+            const ritas = document.querySelector('#st-ritas-img');
+            const leos = document.querySelector('#st-leos-img');
+            ritas.classList.add('from-side');
+            leos.classList.add('from-side');
+            downArrow.classList.add('arrows-active');
+          }, 5000);
+        };
+
+        function scrollToSection(e, href) {
+          console.log(href);
+          e.preventDefault();
+          let section = document.querySelector(href);
+          window.scroll({
+            top: section.offsetTop,
+            left: 0,
+            behavior: 'smooth'
+          });
+        }
+
+        const links = document.querySelectorAll('.link');
+        links.forEach(link => {
+          link.addEventListener('click', (e) => scrollToSection(e, link.href.baseVal));
+        })
+
+        </script>
+
+        <script>
+          function initMap() {
+            var uluru = {lat: -25.363, lng: 131.044};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 15,
+              center: uluru
+            });
+
+            var geocoder = new google.maps.Geocoder();
+
+            geocoder.geocode({'address': 'St. Rita Catholic Church, Russell Road, Alexandria, VA'}, function(results, status){
+              if (status === 'OK') {
+                map.setCenter(results[0].geometry.location);
+                var marker = new google.maps.Marker({
+                  map: map,
+                  position: results[0].geometry.location
+                });
+              } else {
+                console.log('error');
+              }
+            });
+          }
+        </script>
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-n6odGZnv3CPirWu9ZBDPBOkzYp2Pgh8&callback=initMap">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,306 @@
+html, body {
+  font-family: 'Coda', cursive;
+  color: white;
+  background-color: rgb(44, 44, 44);
+}
+
+#fight-bumper {
+  color: white;
+  padding: 30px;
+  opacity: 0.7;
+}
+
+section {
+  position: relative;
+  background-color: rgb(44, 44, 44);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.panels {
+  min-height:100vh;
+  overflow: hidden;
+  display: flex;
+  position: fixed;
+  min-width: 100vw;
+}
+
+.panel {
+  background:#6B0F9C;
+  box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
+  color:white;
+  text-align: center;
+  align-items:center;
+  /* Safari transitionend event.propertyName === flex */
+  /* Chrome + FF transitionend event.propertyName === flex-grow */
+  transition:
+    font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    transform 0.8s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    background 0.2s;
+  font-size: 20px;
+  background-size:cover;
+  background-position:center;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel > * {
+  margin:0;
+  width: 100%;
+  transition:transform 0.5s;
+  flex: 1 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.off-left {
+  transform: translateX(-100%);
+}
+
+.off-right {
+  transform: translateX(100%);
+}
+
+/*.from-right {
+  animation: 0.5s ease-out 0s 1 slideInFromRight;
+}
+
+.from-left {
+  animation: 0.5s ease-out 0s 1 slideInFromLeft;
+}
+*/
+
+.from-side {
+  transform: translateX(0%);
+}
+
+.display-1 {
+  font-size: 100px;
+}
+
+.display-2 {
+  font-size: 60px;
+}
+
+.display-3 {
+  font-size: 40px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.active-from-bottom {
+  transform: translate(-50%, -50%);
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-1 {
+  opacity: 1;
+}
+
+.fade-in {
+  transition: opacity 2s ease-in-out;
+}
+
+/*@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+*/
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+  visibility: hidden;
+}
+
+.arrows.arrows-active {
+  visibility: visible;
+}
+
+.arrows path {
+	stroke: #2994D1;
+	fill: transparent;
+	stroke-width: 3px;
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari Chrome */
+}
+
+/* Fight Card */
+@media screen and (min-width: 768px)
+.fight-card {
+    width: 530px;
+}
+
+@media screen and (min-width: 992px)
+.fight-card {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.fights {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  flex-direction: column;
+}
+
+.fight-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+}
+
+.fight-card-header {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex: 1;
+}
+
+.fighter {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.fight-circle {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  left: 47.5%;
+  border-radius: 100%;
+  border: solid;
+  padding: 8px;
+}
+
+.main-event {
+  min-height: 40vh;
+  padding: 40px;
+  margin: 0 !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/boxingring2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center center;
+}
+
+.additional-details {
+  flex: 1;
+}
+
+.fighter-ritas {
+  background-color: #38958B;
+}
+
+.fighter-leos {
+  background-color: #2D2D33;
+}
+
+.fighter-facts {
+  background-color: #22313F;
+}
+
+/*
+.fighter.fighter-ritas > img {
+  float: left;
+}
+
+.fighter.fighter-leos > img {
+  float: right;
+}
+*/
+
+.fight-card-row {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+/* flex */
+.row-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-50 {
+  flex-basis: 50%;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.mgn-10 {
+  margin: 10px;
+}
+
+.mgn-25 {
+  margin: 25px;
+}
