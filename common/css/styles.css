@@ -101,6 +101,10 @@ section {
   font-size: 40px;
 }
 
+.display-4 {
+  font-size: 24px;
+}
+
 .centered {
   position: absolute;
   top: 50%;
