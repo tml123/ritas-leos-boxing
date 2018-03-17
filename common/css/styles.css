@@ -13,6 +13,7 @@ html, body {
 section {
   position: relative;
   background-color: rgb(44, 44, 44);
+  min-height: 100vh;
 }
 
 .flex {
@@ -105,6 +106,10 @@ section {
   font-size: 24px;
 }
 
+.pd-5 {
+  padding: 5px;
+}
+
 .centered {
   position: absolute;
   top: 50%;
@@ -188,19 +193,6 @@ section {
 .arrows path.a1 {
 	animation-delay:-1s;
 	-webkit-animation-delay:-1s; /* Safari Chrome */
-}
-
-/* Fight Card */
-@media screen and (min-width: 768px)
-.fight-card {
-    width: 530px;
-}
-
-@media screen and (min-width: 992px)
-.fight-card {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
 }
 
 .fights {
@@ -293,6 +285,11 @@ section {
   flex-direction: row;
 }
 
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
 .flex-50 {
   flex-basis: 50%;
 }
@@ -307,4 +304,42 @@ section {
 
 .mgn-25 {
   margin: 25px;
+}
+
+@media screen and (max-width: 768px) {
+.flex-col-md {
+  flex-direction: column;
+  }
+ .background-attachment-scroll-md {
+   background-attachment: scroll;
+ }
+ .position-relative-md {
+   position: relative;
+ }
+ .display-1 {
+   font-size: 75px;
+ }
+ .display-2 {
+   font-size: 45px;
+ }
+ .display-3 {
+   font-size: 30px;
+ }
+ .display-4 {
+   font-size: 18px;
+ }
+ .text-display-md {
+   font-size: 14px;
+ }
+ .centered {
+   transform: translate(-50%, -80%);
+ }
+}
+
+
+
+@media screen and (max-width: 412px) {
+.flex-col-sm {
+  flex-direction: column;
+  }
 }

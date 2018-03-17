@@ -11,8 +11,8 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="./node_modules/html5-boilerplate/dist/css/normalize.css">
-        <link rel="stylesheet" href="./node_modules/html5-boilerplate/dist/css/main.css">
+        <link rel="stylesheet" href="./common/html5-boilerplate/dist/css/normalize.css">
+        <link rel="stylesheet" href="./common/html5-boilerplate/dist/css/main.css">
         <link rel="stylesheet" href="./common/css/styles.css" />
         <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet">
         <style>
@@ -30,8 +30,8 @@
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-        <section id='fight-flyer' style="height: 100vh;">
-          <div class="panels">
+        <section id='fight-flyer'>
+          <div class="panels flex-col-md flex-col-sm position-relative-md">
             <div id="st-leos-img" class="panel off-left" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./common/img/stleo.jpg); background-size:cover;">
               <div class="flex flex-column flex-centered">
                 <span class="display-1">
@@ -50,9 +50,9 @@
             </div>
           </div>
           <div id="fight-bumper" class="centered opacity-half flex flex-column flex-centered">
-            <div id="open-fade-1" class="display-1 opacity-0 fade-in">One Night</div>
-            <div id="open-fade-2" class="display-2 opacity-0 fade-in">Three Fights</div>
-            <div id="open-fade-3" class="display-2 opacity-0 fade-in">
+            <div id="open-fade-1" class="display-2 opacity-0 fade-in">One Night</div>
+            <div id="open-fade-2" class="display-3 opacity-0 fade-in">Three Fights</div>
+            <div id="open-fade-3" class="display-3 opacity-0 fade-in">
               May 18, 2018
             </div>
           </div>
@@ -63,10 +63,10 @@
           </svg>
         </section>
 
-        <section id="fight-details" style="height: 100vh;">
+        <section class="flex-col-md flex-col-sm" id="fight-details">
 
-          <div class="fight-card main-event">
-            <div style="display: flex; flex-direction: row; align-items:center; justify-content:flex-start;">
+          <div class="fight-card main-event background-attachment-scroll-md">
+            <div class="flex-col-md flex-col-sm" style="display: flex; align-items:center; justify-content:flex-start;">
               <div class="display-2 mgn-10">
                 Rita's - Leo's
               </div>
@@ -74,8 +74,8 @@
                 King of the Ring
               </div>
             </div>
-            <div style="height: inherit; display: flex; justify-content: space-around;">
-              <header class="fight-card-header" style="flex: 1 60%; margin-left: 10px;">
+            <div class="flex-col-md flex-col-sm" style="height: inherit; display: flex; justify-content: space-around;">
+              <header class="fight-card-header flex-col-md" style="flex: 1 60%; margin-left: 10px;">
                 <div class="fighter fighter-ritas">
                   <img alt="fighter" src="https://dummyimage.com/100x100/"/>
                   <span>Fighter Name</span>
@@ -88,7 +88,7 @@
                   <span>Fighter Name</span>
                 </div>
               </header>
-              <div style="flex: 1 40%; margin-left: 20px;">
+              <div class="text-display-md" style="flex: 1 40%; margin-left: 20px;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
               </div>
             </div>
@@ -98,10 +98,10 @@
             Undercard
           </div>
 
-          <div class="fights wrap">
-            <div class="row-container">
+          <div class="fights">
+            <div class="row-container flex-col-md">
               <div class="fight-card flex-50">
-                <header class="fight-card-header">
+                <header class="fight-card-header flex-col-md">
                   <div class="fighter fighter-ritas">
                     <img alt="fighter" src="https://dummyimage.com/100x100/"/>
                     <span>Fighter Name</span>
@@ -117,7 +117,7 @@
               </div>
 
               <div class="fight-card flex-50">
-                <header class="fight-card-header">
+                <header class="fight-card-header flex-col-md">
                   <div class="fighter fighter-ritas">
                     <img alt="fighter" src="https://dummyimage.com/100x100/"/>
                     <span>Fighter Name</span>
@@ -133,9 +133,9 @@
               </div>
             </div>
 
-            <div class="row-container">
+            <div class="row-container flex-col-md">
               <div class="fight-card flex-50">
-                <header class="fight-card-header">
+                <header class="fight-card-header flex-col-md">
                   <div class="fighter fighter-ritas">
                     <img alt="fighter" src="https://dummyimage.com/100x100/"/>
                     <span>Fighter Name</span>
@@ -160,23 +160,23 @@
           </svg>
         </section>
 
-        <section id='fight-location' style="height: 100vh; display: flex; flex: 1; flex-direction: column; justify-content: space-between;">
-          <div class="row-container" style="padding: 3rem;">
-            <div class="flex-50">
-              <div class="row-container" style="justify-content: flex-start; align-items: center;">
-                <span class="display-3" style="margin-right: 3rem;">Tickets</span>
-                <span class="display-4">Suggested Donation</span>
+        <section id='fight-location' style="display: flex; flex: 1; flex-direction: column; justify-content: space-between;">
+          <div class="row-container flex-col-md" style="padding: 3rem; justify-content: space-around;">
+            <div class="row-container" style="justify-content: space-around;">
+              <div class="col flex-col-md" style="justify-content: space-around; margin-right: 3rem;">
+                <div class="display-3">Tickets</div>
+                <div class="display-3">Location</div>
+                <div class="display-3">Parking</div>
+                <div class="display-3">Time</div>
               </div>
-              <div class="row-container" style="justify-content: flex-start; align-items: center;">
-                <span class="display-3" style="margin-right: 3rem;">Location</span>
-                <span class="display-4">School Basement</span>
-              </div>
-              <div class="row-container" style="justify-content: flex-start; align-items: center;">
-                <span class="display-3" style="margin-right: 3rem;">Parking</span>
-                <span class="display-4">Behind the Parish</span>
+              <div class="col flex-col-md" style="justify-content: space-around;">
+                <div class="display-4 pd-5">Suggested Donation</div>
+                <div class="display-4 pd-5">School Basement</div>
+                <div class="display-4 pd-5">Behind the Parish</div>
+                <div class="display-4 pd-5">8:00 PM</div>
               </div>
             </div>
-            <div class="flex-50" style="font-size: 25px;">
+            <div class="flex-50 text-display-md">
               When you arrive, park in the parking lot behind the parish.  Walk across the parking lot
               toward the back of the school.  Approach the steps leading down into the basement (underneath
               the wooden steps leading up into the school).  Tickets will be given at the door for a suggested
@@ -186,11 +186,11 @@
           <div id="map"></div>
         </section>
 
-        <script src="./node_modules/html5-boilerplate/dist/js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="./common/html5-boilerplate/dist/js/vendor/modernizr-3.5.0.min.js"></script>
         <!---<script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>-->
-        <script src="./node_modules/html5-boilerplate/dist/js/plugins.js"></script>
-        <script src="./node_modules/html5-boilerplate/dist/js/main.js"></script>
+        <script src="./common/html5-boilerplate/dist/js/plugins.js"></script>
+        <script src="./common/html5-boilerplate/dist/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <!--<script>
